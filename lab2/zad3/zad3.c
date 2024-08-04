@@ -34,4 +34,8 @@ int main() {
     
     printf("nww: %d\n",j);
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/main
