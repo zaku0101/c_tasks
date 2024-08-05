@@ -1,8 +1,8 @@
-*/*
+*/*/*
 .vscode/
-!*/*.c
-!*/*.h
+!*/*/*.c
+!*/*/*.h
 !.gitignore
-!*/Makefile
-!*/makefile
+!*/*/Makefile
+!*/*/makefile
 
