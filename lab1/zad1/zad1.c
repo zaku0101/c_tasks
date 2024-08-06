@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main(void){
-    float a,b,c;
+    const float a,b,c;
     
     do
     {
@@ -15,7 +15,7 @@ int main(void){
     }
     while(a==0);
 
-    int delta = (b*b) - (4*a*c);
+    const float delta = (b*b) - (4*a*c);
 
     if(delta < 0){
         printf("Brak pierwiastków rzeczywistych\n");
@@ -24,8 +24,8 @@ int main(void){
         float x = -b/(2*a);
         printf("Istnieje tylko jeden pierwiastek x = %f\n",x);
     }else{
-        float x1 = (-b - sqrt(delta))/(2*a);
-        float x2 = (-b + sqrt(delta))/(2*a);
+        const float x1 = (-b - sqrt(delta))/(2*a);
+        const float x2 = (-b + sqrt(delta))/(2*a);
         printf("Obliczone pierwiastki x1: %f%s%f\n",x1,"x2: ",x2);
     }
 

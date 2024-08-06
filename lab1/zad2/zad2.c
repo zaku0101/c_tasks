@@ -40,7 +40,7 @@ bool is_date_correct(int day, int month, int year){
 
 int main(void)
 {
-    int d,m,y;
+    unsigned int d,m,y;
 
     printf("Podaj dzien:");
     scanf("%d", &d);

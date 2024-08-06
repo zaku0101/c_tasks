@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define ESC 27
+
 int main(){
     
     int tab[26]={0};
@@ -9,7 +11,7 @@ int main(){
 
     while (1){
         curr_char = getc(stdin);
-        if(curr_char == 27){
+        if(curr_char == ESC){
         break;
         }
         if(curr_char>='a' && curr_char<='z'){
