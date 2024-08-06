@@ -16,7 +16,7 @@ int main(){
     
     printf("===Suma1===\n");
     while(1){
-        double single_exp = (pow(-1, k+1) * (1/(2*k-1)));
+        const double single_exp = (pow(-1, k+1) * (1/(2*k-1)));
         mod1 = fabs(single_exp);
         if(eps>mod1){
             break;
@@ -27,20 +27,14 @@ int main(){
     }
 
     printf("===Suma2===\n");
-    double j=1;
-    double first=1;
-    double fact;
+    double j=2;
+    double fact=1;
 
         while(1){
 
-        if (j==first){
-            fact=j;
-        }
-        else{
-            fact *=  j;
-        }
+        fact *=  j;
         
-        double single_exp = 1/fact;
+        const double single_exp = 1/(fact);
         mod2 = fabs(single_exp);
         if(eps>mod2){
             break;
